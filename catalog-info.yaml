@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: image-prebuilt
+  description: Image Prebuilt 
+  tags:
+    - supply-chain
+    - custom-stuff
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=image-prebuilt'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
